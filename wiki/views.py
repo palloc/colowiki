@@ -14,20 +14,19 @@ def index(request):
 
 # Article's view
 def article(request, article_id):
-    return render(request, 'wiki/article.html', {'id': article_id})
+    article_data = get_object_or_404(Article, pk=article_id)
+    return render(request, 'wiki/article.html', {'article': article_data})
 
 # Article's edit view
 def article_edit(request, article_id):
     if not request.user.is_authenticated():
         return HttpResponseRedirect('/article/' + article_id + '/')
-    return render(request, 'wiki/article_edit.html', {'id': article_id})
+    article_data = get_object_or_404(Article, pk=article_id)    
+    return render(request, 'wiki/article_edit.html', {'article': article_data})
 
 # Logout view
 def logout_view(request):
     logout(request)
     return render(request)
-
-# 
-    
 
 

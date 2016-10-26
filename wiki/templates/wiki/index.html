@@ -1,13 +1,7 @@
 {% extends "base.html" %}
-{% block title %}ブログ内容{% endblock title %}
+{% block title %}Contents{% endblock title %}
 
 {% block content %}
-    {% for blog in blogs %}
-        <h3>日付</h3>
-        {{ blog.date }}
-        <h3>タイトル</h3>
-        {{ blog.title }}
-        <h4>本文</h4>
-        {{ blog.text }}
-    {% endfor %}
+<h1>Hello</h1>
+
 {% endblock content %}
