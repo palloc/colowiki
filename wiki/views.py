@@ -25,7 +25,7 @@ def article_list(request, category_id):
     category = Category.objects.all()
     # Category list
     list = Article.objects.filter(id=category_id)
-
+    
     return render(request, 'wiki/list.html', {'articles': list, 'category': category, 'big_cat': big_category})
 
 

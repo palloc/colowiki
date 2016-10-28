@@ -4,18 +4,18 @@ body {
 
 #sidebar h1 {
 	position: relative;
-	padding: .75em 1em .75em 1.5em;
+	padding: .25em 1em .25em 1.5em;
 	border: 3px solid #ccc;
 }
 
 #sidebar h1::after {
 	position: absolute;
-	top: .5em;
+	top: .3em;
 	left: .5em;
 	content: '';
-	width: 6px;
+	width: 3px;
 	height: -webkit-calc(100% - 1em);
-	height: calc(100% - 1em);
+	height: calc(110% - 1em);
 	background-color: #3498db;
 	border-radius: 6px;
 }

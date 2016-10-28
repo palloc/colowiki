@@ -16,7 +16,10 @@
  	<article>
  		<div id="sidebar">
 			{% for bcat in big_cat %}
-			<h1>{{ bcat.name }}</h1>
+			<div onclick="obj=document.getElementById('open{{ forloop.counter }}').style; obj.display=(obj.display=='none')?'block':'none';">
+				<a style="cursor:pointer;"><h1>{{ bcat.name }}</h1></a>
+			</div>
+			<div id="open{{ forloop.counter }}" style="display:none;clear:both;">
 				{% for cat in category %}
 				<ul>
 					{% ifequal cat.big_category|stringformat:"s" bcat.name|stringformat:"s" %}					
@@ -26,6 +29,7 @@
 					{% endifequal %}
 				</ul>
 				{% endfor %}
+			</div>
    			{% endfor %}
  		</div>
  		<div id="content">
