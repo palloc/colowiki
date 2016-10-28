@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %}Contents{% endblock title %}
 
 {% block content %}
 <div class="wrapper">
+	<link rel="stylesheet" type="text/css" href="{% static 'wiki/css/list.css' %}" />
 	<section>
 		<ul>
 			{% for article in articles %}

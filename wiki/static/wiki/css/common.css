@@ -2,8 +2,26 @@ body {
 	background-color: #eeeef0;
 }
 
+#sidebar h1 {
+	position: relative;
+	padding: .75em 1em .75em 1.5em;
+	border: 3px solid #ccc;
+}
+
+#sidebar h1::after {
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	content: '';
+	width: 6px;
+	height: -webkit-calc(100% - 1em);
+	height: calc(100% - 1em);
+	background-color: #3498db;
+	border-radius: 6px;
+}
+
 header {
-	background-color: #fff;
+	background-color: #1c6899;
 	margin: 5px auto;
 	padding: 1px;
 	border-radius: 10px;
@@ -12,14 +30,14 @@ header {
 
 header a {
 	text-decoration: none;
-	color: #2c88b9;
+	color: #fff;
 	position: relative;
 	padding: 4px;
 	transition: .01s;
 }
 
 header a:hover {
-	color: #00f;
+	color: #ddf;
 	border-radius: 4px;
 }
 
@@ -35,7 +53,8 @@ header a p {
 	float: right;
 	text-align: left;
 	font-size: 20px;
-	padding-right: 5px;
+	padding-right: 10px;
+	margin-right: 10px;
 }
 
 
