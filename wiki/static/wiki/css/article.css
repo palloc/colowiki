@@ -1,0 +1,43 @@
+#title h1 {
+	position: relative;
+	padding: .75em 1em .75em 1.5em;
+	border: 3px solid #ccc;
+}
+
+#title h1::after {
+	position: absolute;
+	top: .5em;
+	left: .5em;
+	content: '';
+	width: 6px;
+	height: -webkit-calc(100% - 1em);
+	height: calc(100% - 1em);
+	background-color: #3498db;
+	border-radius: 4px;
+}
+
+h2 {
+	position: relative;
+	padding-bottom: .5em;
+	border-bottom: 2px solid #ccc;
+}
+h2::after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 20%;
+	height: 2px;
+	background-color: #3498db;
+}
+
+.wrapper {
+	margin: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.date {
+	text-align: right;
+}

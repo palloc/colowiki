@@ -7,23 +7,21 @@
  	<title>wiki</title>
  </head>
  <body>
- 	<header><h1>Colowiki</h1></header>
+ 	<header><a href="/"><h1>Colowiki</h1></a></header>
  	<article>
  		<div id="sidebar">
-			<ul>
-				{% for bcat in big_cat %}
-   				<li class="col_rank">
-   					{{ bcat.name }}
-					{% for cat in category %}
-   					<ol>
-   						{% ifequal cat.big_category|stringformat:"s" bcat.name|stringformat:"s" %}
-   							<a href="/list/{{ cat.id }}/">{{ cat.category_name }}</a>
-   						{% endifequal %}
-   					</ol>
-					{% endfor %}
-   				</li>
-       			{% endfor %}
-       		</ul>
+			{% for bcat in big_cat %}
+			<h1>{{ bcat.name }}</h1>
+				{% for cat in category %}
+				<ul>
+					{% ifequal cat.big_category|stringformat:"s" bcat.name|stringformat:"s" %}					
+					<li>
+						<a href="/list/{{ cat.id }}/">{{ cat.category_name }}</a>
+					</li>
+					{% endifequal %}
+				</ul>
+				{% endfor %}
+   			{% endfor %}
  		</div>
  		<div id="content">
 		 	{% block content %}

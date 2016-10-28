@@ -6,16 +6,14 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'wiki/css/article.css' %}" />
+<div id="title"><h1>{{ article.title }}</h1></div>
 <div class="wrapper">
-	<section>
-		<div id="title"><h1>{{ article.title }}</h1></div>	
-		<div class="text">
-			{{ article.text|markdown }}
-		</div>
-		<div class="date">
-			{{ article.date }}
-		</div>
-	</section>
+	<div class="text">
+		{{ article.text|markdown }}
+	</div>
+	<div class="date">
+		{{ article.date }}
+	</div>
 </div>
 
 
