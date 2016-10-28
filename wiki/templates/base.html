@@ -1,13 +1,18 @@
 {% load staticfiles %}
+{% load mathjax %}
 <!DOCTYPE html>
  <html lang='{{ LANGUAGE_CODE|default:"ja" }}'>
  <head>
  	<meta charset="utf-8">
  	<link rel="stylesheet" type="text/css" href="{% static 'wiki/css/common.css' %}" />
  	<title>wiki</title>
+	{% mathjax_scripts %}
  </head>
  <body>
- 	<header><a href="/"><h1>Colowiki</h1></a></header>
+ 	<header>
+ 		<a href="/"><h1>Colowiki</h1></a>
+ 		<a href="/admin/"><p>login</p></a>
+ 	</header>
  	<article>
  		<div id="sidebar">
 			{% for bcat in big_cat %}
@@ -32,3 +37,14 @@
  	<footer></footer>
  </body>
  </html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

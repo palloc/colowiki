@@ -7,21 +7,40 @@ header {
 	margin: 5px auto;
 	padding: 1px;
 	border-radius: 10px;
+	min-height: 50px;
 }
 
 header a {
 	text-decoration: none;
 	color: #2c88b9;
+	position: relative;
+	padding: 4px;
+	transition: .01s;
 }
 
-header h1 {
+header a:hover {
+	color: #00f;
+	border-radius: 4px;
+}
+
+header a h1 {
+	float: left;
 	margin-left: 10px;
 	padding-left: 10px;
 	text-align: left;
 	font-size: 20px;
 }
 
+header a p {
+	float: right;
+	text-align: left;
+	font-size: 20px;
+	padding-right: 5px;
+}
+
+
 article {
+	clear: both;
 	width: 100%;
 }
 
