@@ -10,9 +10,6 @@
 <div class="wrapper">
 	<div class="text">
 		{{ article.text|markdown }}
-		{% if article.image_data %}
-			<img src="/static/wiki/{{ article.image_data }}">
-		{% endif %}
 	</div>
 	<div class="date">
 		{{ article.date }}
