@@ -1,7 +1,22 @@
 {% extends "base.html" %}
+{% load markdown_deux_tags %}
+{% load staticfiles %}
+
 {% block title %}Contents{% endblock title %}
 
 {% block content %}
-<h1>article</h1>
+<link rel="stylesheet" type="text/css" href="{% static 'wiki/css/article.css' %}" />
+<div class="wrapper">
+	<section>
+		<div id="title"><h1>{{ article.title }}</h1></div>	
+		<div class="text">
+			{{ article.text|markdown }}
+		</div>
+		<div class="date">
+			{{ article.date }}
+		</div>
+	</section>
+</div>
+
 
 {% endblock content %}
