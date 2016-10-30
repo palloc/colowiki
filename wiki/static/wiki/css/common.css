@@ -25,7 +25,7 @@ header {
 	margin: 5px auto;
 	padding: 1px;
 	border-radius: 10px;
-	min-height: 50px;
+	min-height: 80px;
 }
 
 header a {
@@ -46,7 +46,7 @@ header a h1 {
 	margin-left: 10px;
 	padding-left: 10px;
 	text-align: left;
-	font-size: 20px;
+	font-size: 40px;
 }
 
 header a p {
