@@ -1,77 +1,81 @@
 body {
-	background-color: #eeeef0;
+    background-color: #eeeef0;
 }
 
 #sidebar h1 {
-	position: relative;
-	padding: .25em 1em .25em 1.5em;
-	border: 3px solid #ccc;
-	font-size: 20px;
+    position: relative;
+    padding: .25em 1em .25em 1.5em;
+    border: 3px solid #ccc;
+    font-size: 20px;
 }
 
 #sidebar h1::after {
-	position: absolute;
-	top: .3em;
-	left: .5em;
-	content: '';
-	width: 3px;
-	height: -webkit-calc(100% - 1em);
-	height: calc(110% - 1em);
-	background-color: #3498db;
-	border-radius: 6px;
+    position: absolute;
+    top: .3em;
+    left: .5em;
+    content: '';
+    width: 3px;
+    height: -webkit-calc(100% - 1em);
+    height: calc(110% - 1em);
+    background-color: #3498db;
+    border-radius: 6px;
+}
+
+.b-block:hover {
+    background-color:#eee;
 }
 
 header {
-	background-color: #1c6899;
-	margin: 5px auto;
-	padding: 1px;
-	border-radius: 10px;
-	min-height: 70px;
+    background-color: #1c6899;
+    margin: 5px auto;
+    padding: 1px;
+    border-radius: 10px;
+    min-height: 70px;
 }
 
 header a {
-	text-decoration: none;
-	color: #fff;
-	position: relative;
-	padding: 4px;
-	transition: .01s;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 4px;
+    transition: .01s;
 }
 
 header a:hover {
-	color: #ddf;
-	border-radius: 4px;
+    color: #ddf;
+    border-radius: 4px;
 }
 
 header a h1 {
-	float: left;
-	margin-left: 10px;
-	padding-left: 10px;
-	text-align: left;
-	font-size: 30px;
-	margin-bottom: 0;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
 header a p {
-	float: right;
-	text-align: left;
-	font-size: 20px;
-	padding-right: 10px;
-	padding-top: 10px;
-	margin-right: 10px;
+    float: right;
+    text-align: left;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
 }
 
 
 article {
-	clear: both;
-	width: 100%;
+    clear: both;
+    width: 100%;
 }
 
 #sidebar {
-	width: 15%;
-	float: left;
-	padding: 5px;
-	background-color: #fff;
-	border-radius: 15px;	
+    width: 15%;
+    float: left;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 15px;	
 }
 
 #sidebar h2 {
@@ -85,44 +89,44 @@ article {
 }
 
 #sidebar ul li {
-	list-style-type: none;
-	position: relative;
-	font-size: 18px;
+    list-style-type: none;
+    position: relative;
+    font-size: 18px;
 }
 
 #sidebar li:after {
-	display: block;
-	content: '';
-	position: absolute;
-	top: .6em;
-	left: -1em;
-	width: 6px;
-	height: 6px;
-	border-right: 1px solid #f7594d;
-	border-bottom: 1px solid #f7594d;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+    display: block;
+    content: '';
+    position: absolute;
+    top: .6em;
+    left: -1em;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #f7594d;
+    border-bottom: 1px solid #f7594d;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 #sidebar ul li a {
-	color: #2c88b9;
-	text-decoration: none;
-	position: relative;
-	padding: 4px;
-	transition: .01s;
+    color: #2c88b9;
+    text-decoration: none;
+    position: relative;
+    padding: 4px;
+    transition: .01s;
 }
 
 #sidebar ul li a:hover {
-	background-color: #2c88b9;
-	color: #fff;
-	border-radius: 4px;
+    background-color: #2c88b9;
+    color: #fff;
+    border-radius: 4px;
 }
 
 #content {
-	width: 80%;
-	float: right;
-	margin: 0;
-	padding: 1em;
-	background-color: #fff;
-	border-radius: 10px;
+    width: 80%;
+    float: right;
+    margin: 0;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
 }
